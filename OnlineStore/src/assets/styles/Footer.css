@@ -1,0 +1,38 @@
+.footer {
+    border: 1px solid rgb(202, 202, 202);
+    background-color: rgb(202, 202, 202);
+    color: rgb(27, 27, 27);
+    padding: 15px;
+}
+
+.contatos{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contatos li {
+    margin-top: 2px;
+}
+
+.contatos h2 {
+    margin: 10px 0;
+}
+
+.contatos a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+.contatos a:hover {
+    color: rgb(129, 66, 66);
+}
+
+.referencias p{
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.referencias a{
+    margin-right: 10px;
+    text-decoration: none;
+}

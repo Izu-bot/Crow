@@ -1,0 +1,17 @@
+.lookbook{
+    margin: 150px 1px 25px;
+}
+
+.lookbook h1{
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.swiper-container {
+    height: auto;
+}
+
+.imagem-slider {
+    width: 100%;
+    height: auto;
+}

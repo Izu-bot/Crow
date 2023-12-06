@@ -2,6 +2,9 @@
     margin-top: 10px;
 }
 
-.imagem {
-    width: 375px;
+
+@media only screen and (max-width: 767px) {
+    .imagem {
+        width: 100%;
+    }
 }
