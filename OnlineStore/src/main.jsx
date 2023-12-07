@@ -1,10 +1,47 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './App'
+import Home from './assets/routes/Home'
+import Roupas from './assets/routes/Roupas'
+import Carrinho from './assets/routes/Carrinho'
+import Conta from './assets/routes/Conta'
+import CriarConta from './assets/routes/CriarConta'
+
 import './index.css'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "roupas",
+        element: <Roupas />,
+      },
+      {
+        path: "carrinho",
+        element: <Carrinho />,
+      },
+      {
+        path: "conta",
+        element: <Conta />,
+      },
+      {
+        path: "conta/criarConta",
+        element: <CriarConta />
+      }
+    ]
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <RouterProvider router={router} />
+  </React.StrictMode>
 )

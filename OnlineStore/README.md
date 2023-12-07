@@ -4,7 +4,7 @@
 
 ## As imagens que foram usadas para compor o projeto
 
-[Foto de Lucas Brown](https://www.pexels.com/pt-br/foto/modelo-camisa-arranha-ceu-arranha-ceus-16314579/")
+[Foto de Lucas Brown](https://www.pexels.com/pt-br/foto/modelo-camisa-arranha-ceu-arranha-ceus-16314579/)
 
 [Foto de Tony Schnagl](https://www.pexels.com/pt-br/foto/homem-com-sueter-marrom-oculos-escuros-pretos-e-bone-laranja-5592274/)
 

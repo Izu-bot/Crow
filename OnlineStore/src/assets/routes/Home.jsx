@@ -1,8 +1,7 @@
-import Banner from "./Banner"
+import Banner from "../components/Banner"
 import Capa from "../images/CrowGimp.png"
-import Carrosel from "./Carrosel";
-import imagens from './dadosImagens'
-import Footer from "./Footer";
+import Carrosel from "../components/Carrosel";
+import imagens from '../components/dadosImagens'
 
 export default function Home() {
 
@@ -17,7 +16,7 @@ export default function Home() {
 
             <Banner imagem={Capa} texto="Imagem promocional da marca da loja." frase={frase} />
             <Carrosel titulo="lookbook" imagens={imagens} />
-            <Footer />
+            
         </div>
     )
 }

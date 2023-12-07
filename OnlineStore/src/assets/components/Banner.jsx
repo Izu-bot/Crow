@@ -1,5 +1,6 @@
-import '../styles/Banner.css'
 import Frases from './Frases'
+
+import '../styles/Banner.css'
 
 // eslint-disable-next-line react/prop-types
 export default function Banner({imagem, texto, frase}) {

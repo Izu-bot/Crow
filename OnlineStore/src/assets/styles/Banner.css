@@ -1,10 +1,35 @@
-.banner {
-    margin-top: 10px;
+@media only screen and (min-width: 1024px){
+    .banner {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 90%
+    }
 }
 
 
+
+/* Smartphones */
 @media only screen and (max-width: 767px) {
     .imagem {
         width: 100%;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .banner {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 90%
     }
 }

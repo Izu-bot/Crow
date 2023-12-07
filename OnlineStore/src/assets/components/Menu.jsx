@@ -1,50 +1,84 @@
 import { useState, useEffect } from "react";
-import "../styles/Menu.css";
+import { Link } from "react-router-dom";
+
 import Hamburguer from "../images/bars-solid.svg";
 import Close from "../images/xmark-solid.svg";
 
-export default function Menu() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+import "../styles/Menu.css";
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+export default function Menu() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+      if (!isMobile && isOpen) {
+        setIsOpen(false);
+      }
     };
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
+    window.addEventListener("resize", handleResize);
 
-        window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isMobile, isOpen]);
 
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+  return (
+    <div className={!isMobile ? "menu" : ""}>
 
-    return (
-        <div className="menu">
-            {isMobile && (
-                <button onClick={toggleMenu} className='menu-button'>
-                    {!isOpen ? <img src={Hamburguer} alt="Menu Hamburguer" /> : <img src={Close} alt="Close" />}
-                </button>
-            )}
-            {isMobile ? (
-                isOpen && (
-                    <ul className="menu-items open">
-                        <li><a href="#"><i>item 1</i></a></li>
-                        <li><a href="#"><i>item 1</i></a></li>
-                        <li><a href="#"><i>item 1</i></a></li>
-                    </ul>
-                )
-            ) : (
-                <ul className="menu-items horizontal">
-                   <li><a href="#"><i>item 1</i></a></li>
-                   <li><a href="#"><i>item 1</i></a></li>
-                   <li><a href="#"><i>item 1</i></a></li>
-                </ul>
-            )}
-        </div>
-    );
+      {isMobile && (
+        <button onClick={toggleMenu} className="menu-button">
+          {!isOpen ? (
+            <img src={Hamburguer} alt="Menu Hamburguer" />
+          ) : (
+            <img src={Close} alt="Close" />
+          )}
+
+
+        </button>
+
+      )}
+
+      {isMobile ? (
+
+
+        <ul className={`menu-items ${isOpen ? "open" : ""}`}>
+          <li>
+            <Link to="/"> <i>Home</i></Link>
+          </li>
+          <li>
+            <Link to="roupas"> <i>Roupas</i></Link>
+          </li>
+          <li>
+            <Link to="carrinho"> <i>Carrinho</i></Link>
+          </li>
+          <li>
+            <Link to="conta"> <i>Conta</i></Link>
+          </li>
+        </ul>
+      ) : (
+        <ul className="menu-items horizontal">
+
+          <li>
+            <Link to="/"> <i>Home</i></Link>
+          </li>
+          <li>
+            <Link to="roupas"> <i>Roupas</i></Link>
+          </li>
+          <li>
+            <Link to="carrinho"> <i>Carrinho</i></Link>
+          </li>
+          <li>
+            <Link to="conta"> <i>Conta</i></Link>
+          </li>
+        </ul>
+      )}
+    </div>
+  );
 }

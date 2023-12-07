@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+
 import '../styles/Frases.css';
 
 // eslint-disable-next-line react/prop-types
