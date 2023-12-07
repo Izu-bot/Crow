@@ -14,7 +14,7 @@
 
 [Foto de Wesley Davi](https://www.pexels.com/pt-br/foto/lindo-bonito-atraente-elegante-15336543/)
 
-[Foto de Ewerton Alves no Pexels](https://www.pexels.com/pt-br/foto/foto-de-mulher-sentada-na-estrada-3058180/)
+[Foto de Ewerton Alves](https://www.pexels.com/pt-br/foto/foto-de-mulher-sentada-na-estrada-3058180/)
 
 [Foto de Lucas Brown](https://www.pexels.com/pt-br/foto/lindo-bonito-atraente-elegante-16135845/)
 
