@@ -10,7 +10,7 @@ export default function Conta() {
                         <input type="password" placeholder='Senha' />
                     </div>
                     <div className="form-btn">
-                    git push origin main
+                        <button type='button'>Voltar</button>
                         <button type="submit">Entrar</button>
                     </div>
                 </form>
