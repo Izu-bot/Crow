@@ -1,0 +1,166 @@
+.container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+.form-container {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+
+.form-dados {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-dados input {
+    width: 40%;
+}
+
+.form-btn {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.form-dados input {
+    border: transparent;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+}
+
+.form-dados input:focus {
+    outline: none;
+    border-color: rgb(129, 66, 66);
+}
+
+
+
+.form-btn button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-btn button:hover {
+    background-color: rgb(129, 66, 66);
+    border-color: rgb(129, 66, 66);
+    color: white;
+}
+
+/* Celulares */
+@media only screen and (max-width: 767px) {
+
+    .container {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .titulo {
+        text-align: center;
+        margin: 10px;
+        border-bottom: 1px solid black;
+    }
+
+
+    .form-container {
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .form-btn {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .form-btn button {
+        width: 60px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .titulo {
+        text-align: center;
+        margin: 10px;
+        border-bottom: 1px solid black;
+    }
+
+
+    .form-container {
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+    }
+
+
+    .form-dados {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-dados input {
+        width: 40%;
+    }
+
+    .form-btn {
+        margin: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .form-btn button {
+        width: 100px;
+    }
+
+}
