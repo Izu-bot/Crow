@@ -7,14 +7,14 @@ export default function Conta() {
         <div className="container">
             <h1 className='titulo'>Login</h1>
             <form className="form-container" action='' method='POST'>
-                <div className="form-dados">
+                <fieldset className="form-dados">
                     <input type="email" autoFocus placeholder='Email' />
                     <input type="password" placeholder='Senha' />
-                </div>
-                <div className="form-btn">
+                </fieldset>
+                <fieldset className="form-btn">
                     <button type="submit">Entrar</button>
                     <Link to="criarConta">Criar conta</Link>
-                </div>
+                </fieldset>
             </form>
         </div>
     )

@@ -83,6 +83,9 @@
     border-bottom: 1px solid black;
 }
 
+fieldset {
+    border: none;
+}
 
 /* Celulares */
 @media only screen and (max-width: 767px) {

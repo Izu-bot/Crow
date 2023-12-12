@@ -1,0 +1,143 @@
+    @media only screen and (min-width: 1024px) {
+        .form-container {
+            width: 90vw;
+        }
+
+        .dados-pessoais {
+            display: flex;
+            width: 100vw;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .dados-pessoais input {
+            margin: 5px;
+            width: 40%;
+        }
+
+        .dados-pessoais input:focus {
+            outline: 1px solid rgb(129, 66, 66);
+        }
+
+        .dados-pessoais input {
+            border-radius: 5px;
+            border: 1px solid black;
+            height: 25px;
+            padding: 5px;
+        }
+
+        .form-btn {
+            display: flex;
+            gap: 10px;
+            margin: 10px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            width: 100vw;
+        }
+
+        .dados-pessoais input[type="date"] {
+            width: 20%;
+            height: 30px;
+        }
+    }
+
+
+    /* Celulares */
+    @media only screen and (max-width: 767px) {
+
+        .container {
+            height: 100vh;
+        }
+
+        legend {
+            margin: 10px 0px 0px 0px;
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            opacity: 70%;
+        }
+
+        label {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .dados-pessoais {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dados-pessoais input {
+            border-radius: 5px;
+            border: 1px solid black;
+            height: 25px;
+            padding: 5px;
+        }
+
+        .dados-pessoais input:focus {
+            outline: 1px solid rgb(129, 66, 66);
+        }
+
+        .form-btn {
+            display: flex;
+            gap: 10px;
+            margin: 10px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+        }
+
+        .dados-pessoais input[type="date"] {
+            width: 40%;
+            height: 30px;
+        }
+
+    }
+
+
+    /* Tablets */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+        .form-container {
+            margin: 20px;
+        }
+
+        label {
+            align-self: center;
+        }
+
+        .dados-pessoais {
+            display: flex;
+            width: 100vw;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .dados-pessoais input {
+            margin: 5px;
+            width: 20%;
+        }
+
+        .dados-pessoais input:focus {
+            outline: 1px solid rgb(129, 66, 66);
+        }
+
+        .dados-pessoais input {
+            border-radius: 5px;
+            border: 1px solid black;
+            height: 25px;
+            padding: 5px;
+        }
+
+        .form-btn {
+            display: flex;
+            gap: 10px;
+            margin: 10px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+        }
+    }
