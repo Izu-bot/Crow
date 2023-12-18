@@ -4,7 +4,7 @@ import '../styles/CriarConta.css';
 
 export default function CriarConta() {
     return (
-        <div className="container">
+        <div className="container-novo">
             <h1 className="titulo">Crie sua conta</h1>
             <form action="" className="form-container">
                 <fieldset className="dados-pessoais">
