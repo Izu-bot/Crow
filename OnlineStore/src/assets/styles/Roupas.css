@@ -1,0 +1,75 @@
+.roupa-titulo {
+    margin: 10px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(129, 66, 66);
+}
+
+.img-card {
+    width: 250px;
+    height: 350px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .cabide {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-roupa {
+        margin: 15px;
+    }
+
+    .card-roupa p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .cabide {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-roupa {
+        margin: 15px;
+    }
+
+    .card-roupa p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cabide {
+        margin-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-roupa {
+        margin: 15px;
+    }
+
+    .card-roupa p {
+        text-align: center;
+    }
+}

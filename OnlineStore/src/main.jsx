@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import Home from './assets/routes/Home'
 import Roupas from './assets/routes/Roupas'
+import RoupasID from './assets/routes/RoupasID'
 import Carrinho from './assets/routes/Carrinho'
 import Conta from './assets/routes/Conta'
 import CriarConta from './assets/routes/CriarConta'
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "roupas",
         element: <Roupas />,
+      },
+      {
+        path: "roupas/:id",
+        element: <RoupasID />,
       },
       {
         path: "carrinho",
