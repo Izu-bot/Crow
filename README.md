@@ -1,5 +1,7 @@
 # Loja Online Crow
 
+Parte do front end que se conecta com uma API externa também fazendo parte do desafio proposto pela instituição FIAP.
+
 ---
 
 ## As imagens que foram usadas para compor o projeto
