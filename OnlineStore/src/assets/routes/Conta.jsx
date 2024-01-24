@@ -25,7 +25,7 @@ export default function Conta() {
             // autenticação bem sucedida
             const data = await response.json()
 
-            localStorage.setItem('token', data.token)
+            sessionStorage.setItem('token', data.token)
 
             console.log('Login bem-sucedido:')
             // redirecionar

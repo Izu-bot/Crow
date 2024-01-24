@@ -56,9 +56,6 @@ export default function Menu() {
             <Link to="roupas"> <i>Roupas</i></Link>
           </li>
           <li>
-            <Link to="carrinho"> <i>Carrinho</i></Link>
-          </li>
-          <li>
             <Link to="conta"> <i>Conta</i></Link>
           </li>
         </ul>
@@ -70,9 +67,6 @@ export default function Menu() {
           </li>
           <li>
             <Link to="roupas"> <i>Roupas</i></Link>
-          </li>
-          <li>
-            <Link to="carrinho"> <i>Carrinho</i></Link>
           </li>
           <li>
             <Link to="conta"> <i>Conta</i></Link>

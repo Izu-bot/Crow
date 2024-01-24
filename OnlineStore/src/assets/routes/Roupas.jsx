@@ -9,7 +9,7 @@ export default function Roupas() {
     const [roupas, setRoupas] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3333/roupas/', {
+        fetch('http://localhost:3333/roupas', {
             method: 'GET'
         })
             .then(response => response.json())
